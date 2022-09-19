@@ -9,17 +9,15 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file stats.c
+ * @brief contains functions for statistical analysis
  *
- * <Add Extended Description Here>
+ * C programming functions for computing mean, max, min, medium
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author <Bogdan Popescu>
+ * @date <18 sept 2022>
  *
  */
-
-
 
 #include <stdio.h>
 #include "stats.h"
@@ -27,7 +25,32 @@
 /* Size of the Data Set */
 #define SIZE (40)
 
-void main() {
+void print_array(unsigned char* data, unsigned length){
+}
+
+unsigned char find_mean(unsigned char* data, unsigned length){
+}
+
+unsigned char find_maximum(unsigned char* data, unsigned length){
+}
+
+unsigned char get_maxpos(unsigned char* data, unsigned length){
+}
+
+unsigned char find_minimum(unsigned char* data, unsigned length){
+}
+
+unsigned char* sort_array(unsigned char* data, unsigned length){
+	return data;
+}
+
+unsigned char find_median(unsigned char* data, unsigned length){
+}
+
+void print_statistics(unsigned char* data, unsigned char length){
+}
+
+int main() {
 
   unsigned char test[SIZE] = { 34, 201, 190, 154,   8, 194,   2,   6,
                               114, 88,   45,  76, 123,  87,  25,  23,
@@ -38,6 +61,22 @@ void main() {
   /* Other Variable Declarations Go Here */
   /* Statistics and Printing Functions Go Here */
 
+  print_array(test, SIZE);
+
+  printf("mean = %hu \n",find_mean(test, SIZE));
+
+  printf("max = %hu \n",find_maximum(test, SIZE));
+
+  printf("min = %hu \n",find_minimum(test, SIZE));
+
+  printf("median = %hu \n",find_median(test, SIZE));
+
+  print_array(sort_array(test, SIZE),SIZE);
+
+  print_statistics(test, SIZE);
+
+  return 0;
 }
 
 /* Add other Implementation File Code Here */
+

@@ -9,13 +9,13 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
+ * @file <stats.h>
  * @brief <Add Brief Description Here >
  *
  * <Add Extended Description Here>
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author Bogdan Popescu
+ * @date 19.09.2022
  *
  */
 #ifndef __STATS_H__
@@ -36,5 +36,12 @@
  * @return <Add Return Informaiton here>
  */
 
+void print_array(unsigned char*, unsigned);
+unsigned char find_mean(unsigned char*, unsigned);
+unsigned char find_maximum(unsigned char*, unsigned);
+unsigned char find_minimum(unsigned char*, unsigned);
+unsigned char find_median(unsigned char*, unsigned);
+unsigned char* sort_array(unsigned char*, unsigned);
+void print_statistics(unsigned char* data, unsigned char length);
 
 #endif /* __STATS_H__ */
